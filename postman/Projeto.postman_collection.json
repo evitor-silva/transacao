@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"valor\": 400,\r\n    \"dataHora\": \"{{$timestamp}}\"\r\n}",
+					"raw": "{\r\n    \"valor\": 400,\r\n    \"dataHora\": \"{{$isoTimestamp}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
