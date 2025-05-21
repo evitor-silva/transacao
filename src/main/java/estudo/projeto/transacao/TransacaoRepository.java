@@ -27,13 +27,6 @@ public class TransacaoRepository {
         transacao.clear();
     }
 
-    protected void validarTransacao(TransacaoRequest transacaoRequest) {
-        if (transacaoRequest.getValor().compareTo(BigDecimal.ZERO) < 0)
-            throw new IllegalArgumentException("Valor Transacao invalido");
-        if (transacaoRequest.getDataHora().isAfter(OffsetDateTime.now()))
-            throw new IllegalArgumentException("Data de transacao inválida");
-    }
-
     public EstatisticaDto estatistica(OffsetDateTime horaInicial) {
 
         if (transacao.isEmpty()) {

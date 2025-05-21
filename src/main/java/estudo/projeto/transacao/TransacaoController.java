@@ -20,7 +20,6 @@ public class TransacaoController {
     @PostMapping
     public ResponseEntity create(@RequestBody TransacaoRequest transactionRequest) {
         try {
-            transacaoRepository.validarTransacao(transactionRequest);
             transacaoRepository.add(transactionRequest);
             return ResponseEntity.status(HttpStatus.CREATED).build();
 
