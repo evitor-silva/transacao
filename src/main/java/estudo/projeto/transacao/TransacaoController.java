@@ -18,7 +18,7 @@ public class TransacaoController {
     }
 
     @PostMapping
-    public ResponseEntity create(@RequestBody TransacaoRequest transactionRequest) {
+    public ResponseEntity create(@RequestBody TransacaoDto transactionRequest) {
         try {
             transacaoRepository.add(transactionRequest);
             return ResponseEntity.status(HttpStatus.CREATED).build();

@@ -10,17 +10,19 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import estudo.projeto.transacao.TransacaoDto;
 import estudo.projeto.transacao.TransacaoRepository;
-import estudo.projeto.transacao.TransacaoRequest;
 
 @SpringBootTest
 class ProjetoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		TransacaoRequest transacao = new TransacaoRequest(new BigDecimal("100.50"), OffsetDateTime.now());
+		TransacaoDto transacao = new TransacaoDto(new BigDecimal("100.50"), OffsetDateTime.now());
 		final TransacaoRepository dd = new TransacaoRepository();
-		System.out.println(dd.estatistica(null));
+		dd.add(transacao);
+		dd.add(transacao);
+		assertEquals(transacao, dd.estatistica(OffsetDateTime.now()));
 	}
 
 }

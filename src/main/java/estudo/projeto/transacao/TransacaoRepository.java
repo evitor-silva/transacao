@@ -13,13 +13,13 @@ import estudo.projeto.estatistica.EstatisticaDto;
 
 @Repository
 public class TransacaoRepository {
-    private final List<TransacaoRequest> transacao = new ArrayList();
+    private final List<TransacaoDto> transacao = new ArrayList();
 
-    public List<TransacaoRequest> getTransacao() {
+    public List<TransacaoDto> getTransacao() {
         return transacao;
     }
 
-    public void add(TransacaoRequest transacaoRequest) {
+    public void add(TransacaoDto transacaoRequest) {
         transacao.add(transacaoRequest);
     }
 
