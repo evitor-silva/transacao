@@ -6,13 +6,14 @@ pipeline{
                 echo 'Hello world'
             }
         }
-    }
-    stage('Compilar Java') {
+        stage('Compilar Java') {
             steps {
                 script {
                     // Assumindo que os arquivos .java estão na pasta src
                     bat 'javac src\\*.java'
                 }
             }
+        }
     }
+
 }
