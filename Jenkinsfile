@@ -10,7 +10,7 @@ pipeline{
             steps {
                 script {
                     // Assumindo que os arquivos .java estão na pasta src
-                    bat 'javac src\\*.java'
+                  bat 'mvn clean compile'
                 }
             }
         }
