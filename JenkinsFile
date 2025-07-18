@@ -7,4 +7,12 @@ pipeline{
             }
         }
     }
+    stage('Compilar Java') {
+            steps {
+                script {
+                    // Assumindo que os arquivos .java estão na pasta src
+                    bat 'javac src\\*.java'
+                }
+            }
+    }
 }
