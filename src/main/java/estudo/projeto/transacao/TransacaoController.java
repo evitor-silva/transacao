@@ -18,7 +18,7 @@ public class TransacaoController {
     }
 
     @PostMapping
-    public ResponseEntity create(@RequestBody TransacaoDto transactionRequest) {
+    public ResponseEntity<String> create(@RequestBody TransacaoDto transactionRequest) {
         try {
             transacaoRepository.add(transactionRequest);
             return ResponseEntity.status(HttpStatus.CREATED).build();
@@ -29,7 +29,7 @@ public class TransacaoController {
     }
 
     @DeleteMapping
-    public ResponseEntity limpar() {
+    public ResponseEntity<String> limpar() {
         transacaoRepository.limpar();
         return ResponseEntity.status(HttpStatus.OK).build();
     }
