@@ -1,0 +1,9 @@
+./src/main/resources/*
+*.log
+/target/
+application.properties
+/bin
+/.vscode
+/.settings
+/.mvn
+/.idea
