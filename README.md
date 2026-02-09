@@ -1,6 +1,6 @@
 # Link do projeto Docker
 https://hub.docker.com/r/vitoresbr/transacao-build
-docker-compose up
+
 ```cmd
 docker pull vitoresbr/transacao-build:1.0 
 docker-compose up
