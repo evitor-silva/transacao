@@ -1,5 +1,5 @@
-# Link do projeto
-[transacao-production.up.railway.app](https://transacao-production.up.railway.app/)
+# Link do projeto Docker
+[docker pull vitoresbr/transacao-build:1.0](https://hub.docker.com/r/vitoresbr/transacao-build)
 
 # Projeto transacao
 
