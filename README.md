@@ -1,5 +1,11 @@
 # Link do projeto Docker
-[docker pull vitoresbr/transacao-build:1.0](https://hub.docker.com/r/vitoresbr/transacao-build)
+https://hub.docker.com/r/vitoresbr/transacao-build
+docker-compose up
+```cmd
+docker pull vitoresbr/transacao-build:1.0 
+docker-compose up
+```
+
 
 # Projeto transacao
 
@@ -17,7 +23,7 @@ Este é o endpoint que irá receber as Transações. Cada transação consiste d
 
 Os campos no JSON acima significam o seguinte:
 
-| Campo      | Significado                                                   | Obrigatório? |
+| Campo      | Significado                                                   | Obrigatório |
 |------------|---------------------------------------------------------------|--------------|
 | `valor`    | **Valor em decimal com ponto flutuante** da transação         | Sim          |
 | `dataHora` | **Data/Hora no padrão ISO 8601** em que a transação aconteceu | Sim          |
